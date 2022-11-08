@@ -1,0 +1,39 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0;
+}
+
+/* Estilos específicos */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 2.5rem 0rem 1rem 0rem;
+}
+
+.inputEnviar {
+    margin-top: 1rem;
+}
