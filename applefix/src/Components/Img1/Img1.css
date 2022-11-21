@@ -1,15 +1,15 @@
-.App-logo {
+.Img1__logo {
     height: 40vmin;
     pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 30s linear;
+    .Img1__logo {
+        animation: Img1__logo-spin infinite 30s linear;
     }
 }
 
-@keyframes App-logo-spin {
+@keyframes Img1__logo-spin {
     from {
         transform: rotate(0deg);
     }

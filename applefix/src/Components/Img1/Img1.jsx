@@ -1,9 +1,12 @@
-import logo from '../../logo-sin-fondo.png'
+// Imports
+import logo1 from '../../logo-sin-fondo.png'
 
-function Img1(){
+// Code
+const Img1 = () => {
     return(
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo1} className="Img1__logo" alt="logo" />
     )
 }
 
+// Exports
 export default Img1

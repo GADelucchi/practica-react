@@ -1,13 +1,15 @@
+// Imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Initial from './Pages/Initial'
 import reportWebVitals from './reportWebVitals';
 
+// Code
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Initial />
   </React.StrictMode>
 );
 

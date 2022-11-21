@@ -1,0 +1,17 @@
+.CartWidget {
+    display: flex;
+    gap: 5px;
+}
+
+.CartWidget__img {
+    height: 40px;
+    width: auto;
+}
+
+.CartWidget__span {
+    font-size: 10px;
+    background-color: rgb(82, 79, 249);
+    padding: 0px 4px;
+    border-radius: 10px;
+    align-self: flex-end;
+}

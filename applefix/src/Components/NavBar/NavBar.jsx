@@ -1,24 +1,36 @@
+// Imports
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import BSButton from '../BSButton';
 import logo from '../../logo-sin-fondo.png'
 
-function NavBar() {
+// Code
+const NavBar = () => {
     return (
-            <Navbar className='NavBar' bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#">
-                        <img src={logo} className='NavBar-logo'/>
-                    </Navbar.Brand>
-                    
-                    <Nav className="Nav">
-                        <Nav.Link href="#">Inicio</Nav.Link>
-                        <Nav.Link href="#">Productos</Nav.Link>
-                        <Nav.Link href="#">Contáctanos</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
+        <Navbar className='NavBar' bg="dark" variant="dark">
+            <Container>
+                <div>
+                    <img src={logo} className='NavBar__logo' alt='Logo AppleFix' />
+                    <Navbar.Brand href="#" className='NavBar__text'>AppleFix Reparaciones</Navbar.Brand>
+                </div>
+                <Nav className="Nav">
+                    <Nav.Link href="#">Inicio</Nav.Link>
+                    <NavDropdown title="Productos" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#">Repuestos</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Herramientas</NavDropdown.Item>
+                        <NavDropdown.Item href="#">Licencias</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#">Equipos</NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link href="#">Contáctanos</Nav.Link>
+                    <BSButton />
+                </Nav>
+            </Container>
+        </Navbar>
     );
 }
 
+// Exports
 export default NavBar;

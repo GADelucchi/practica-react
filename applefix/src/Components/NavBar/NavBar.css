@@ -2,11 +2,16 @@
     width: 100%;
 }
 
-.NavBar-logo {
-    height: 100px;
+.NavBar__logo {
+    height: 55px;
+    width: auto;
+}
+
+.NavBar__text {
+    font-size: 20px;
 }
 
 .Nav {
-    font-size: 40px;
-    gap: 25px;
+    font-size: 20px;
+    gap: 20px;
 }
