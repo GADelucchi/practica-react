@@ -1,1 +1,1 @@
-Solo creamos la carpeta de el trabajo final para hacer apps con React
+Creamos la carpeta de el trabajo final para hacer apps con React. Vimos cómo es la manera correcta de crear componentes, exportarlos y renderizarlos.

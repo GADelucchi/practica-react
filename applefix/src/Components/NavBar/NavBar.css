@@ -1,0 +1,12 @@
+.NavBar {
+    width: 100%;
+}
+
+.NavBar-logo {
+    height: 100px;
+}
+
+.Nav {
+    font-size: 40px;
+    gap: 25px;
+}

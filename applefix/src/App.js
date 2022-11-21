@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './Components/Title'
+import NavBar from './Components/NavBar'
+import Img1 from './Components/Img1'
+import Img2 from './Components/Img2'
+import BSButton from './Components/Button'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Llegó AppleFix a la ciudad
-        </p>
-        <a
-          className="App-link"
-          href="https://applefix.com.ar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visitá AppleFix
-        </a>
+        <NavBar />
       </header>
     </div>
   );

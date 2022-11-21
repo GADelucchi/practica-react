@@ -10,4 +10,4 @@ Array.prototype.customFind = function (callback){
 };
 
 
-console.log([2,3,15,67,90].customFind(n => n > 15))
+[2,3,15,67,90].customFind(n => n > 15)
