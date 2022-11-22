@@ -2,14 +2,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Initial from './Pages/Initial'
+import App from './App'
 import reportWebVitals from './reportWebVitals';
 
 // Code
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Initial />
+    <App />
   </React.StrictMode>
 );
 

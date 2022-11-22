@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import BSButton from '../BSButton';
+import CartWidget from '../CartWidget';
 import logo from '../../logo-sin-fondo.png'
 
 // Code
@@ -25,7 +25,11 @@ const NavBar = () => {
                         <NavDropdown.Item href="#">Equipos</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#">Contáctanos</Nav.Link>
-                    <BSButton />
+
+                    {/* CartWidget */}
+                    <button className='NavBar__button__CartWidget'>
+                        <CartWidget />
+                    </button>
                 </Nav>
             </Container>
         </Navbar>

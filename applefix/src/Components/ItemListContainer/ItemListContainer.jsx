@@ -1,19 +1,12 @@
 // Imports
-import Proptype from 'prop-types'
 
 // Code
-const ItemListContainer = ({children}) => {
+const ItemListContainer = ({ greeting }) => {
     return (
-        <>
-            <div>
-                {children}
-            </div>
-        </>
+        <div>
+            <h1>{greeting}</h1>
+        </div>
     )
-}
-
-ItemListContainer.prototype = {
-    children: Proptype.element
 }
 
 // Exports
