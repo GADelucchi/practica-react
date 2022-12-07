@@ -1,0 +1,1 @@
+Vimos lo que son los estados y cambios de estado, como actividad de la clase hicimos un contador con track de fecha/hora (https://stackblitz.com/edit/react-ts-25abju?file=App.tsx)

@@ -5,7 +5,7 @@ import ItemListContainer from './Components/ItemListContainer'
 
 // Code
 const App = () => {
-const saludo = 'Bienvenido a AppleFix App'
+    const saludo = 'Bienvenido a AppleFix App'
 
     return (
         <div className="App">
@@ -19,5 +19,5 @@ const saludo = 'Bienvenido a AppleFix App'
     );
 }
 
-// Exports
+// Export
 export default App;

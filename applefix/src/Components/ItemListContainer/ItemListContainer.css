@@ -1,6 +1,5 @@
-.ItemListContainer__ul {
+.ItemListContainer {
     display: flex;
-    list-style: none;
     justify-content: space-around;
     margin-top: 20px;
 }

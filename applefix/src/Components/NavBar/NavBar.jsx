@@ -9,6 +9,7 @@ import logo from '../../logo-sin-fondo.png'
 // Code
 const NavBar = () => {
     return (
+        // Boostrap Navbar
         <Navbar className='NavBar' bg="dark" variant="dark">
             <Container>
                 <div>

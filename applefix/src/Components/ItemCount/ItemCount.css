@@ -1,0 +1,11 @@
+.ItemCount__div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ItemCount__button {
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
