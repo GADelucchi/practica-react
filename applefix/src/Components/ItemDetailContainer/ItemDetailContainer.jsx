@@ -1,7 +1,10 @@
+//Imports
+import ItemDetail from "../ItemDetail"
+
 //Code
 const ItemDetailContainer = () => {
-    return(
-        <h1>Soy el ItemDetailContainer</h1>
+    return (
+        <ItemDetail />
     )
 }
 

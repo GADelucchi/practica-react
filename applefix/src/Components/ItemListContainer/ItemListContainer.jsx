@@ -1,6 +1,7 @@
 // Imports
 import Item from "../Item/Item"
-import { productos, categorias } from "../../mock"
+import '../Item/Item.css'
+import { productos } from "../../mock"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
@@ -9,11 +10,11 @@ const ItemListContainer = () => {
     const [item, setItem] = useState(productos)
     const { id } = useParams()
 
-    const filterCategory = new Promise((resolve, reject) => {
+    const filterCategory = new Promise((resolve) => {
         setTimeout(() => {
-            let newProductos = item.filter((p) => p.category == id)
+            let newProductos = productos.filter((p) => p.category === id)
             resolve(newProductos)
-        }, 2000);
+        }, 200);
     })
 
     useEffect(() => {
