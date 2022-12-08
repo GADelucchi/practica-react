@@ -1,32 +1,34 @@
 // Imports
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget';
 import logo from '../../logo-sin-fondo.png'
 
 // Code
-const NavBar = () => {
+const NavBar = ({ menus, categorias}) => {
     return (
-        // Boostrap Navbar
-        <Navbar className='NavBar' bg="dark" variant="dark">
-            <Container>
-                <div>
-                    <img src={logo} className='NavBar__logo' alt='Logo AppleFix' />
-                    <Navbar.Brand href="/" className='NavBar__text'>AppleFix Reparaciones</Navbar.Brand>
-                </div>
-                <Nav className="Nav">
-                    <Nav.Link href="/">Inicio</Nav.Link>
-                    <Nav.Link href="/repuestos">Repuestos</Nav.Link>
-                    <Nav.Link href="/equipos">Equipos</Nav.Link>
+        <div className="NavBar">
+            <div>
+                <img src={logo} className='NavBar__logo' alt='Logo AppleFix' />
+                <Link to="/" className="NavBar__menu">AppleFix Reparaciones</Link>
+            </div>
 
-                    {/* CartWidget */}
-                    <button className='NavBar__button__CartWidget'>
-                        <CartWidget />
-                    </button>
-                </Nav>
-            </Container>
-        </Navbar>
+            <div className="Nav">
+                {
+                    menus.map((menu) => {
+                        return <Link className='NavBar__menu' to={menu.href} key={menu.id}>{menu.name}</Link>
+                    })
+                }
+                {
+                    categorias.map((categoria) => {
+                        return <Link className='NavBar__category' to={`/category/${categoria.id}`} key={categoria.id}>{categoria.name}</Link>
+                    })
+                }
+
+                <button className='NavBar__button__CartWidget'>
+                    <CartWidget />
+                </button>
+            </div>
+        </div>
     );
 }
 

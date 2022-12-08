@@ -1,6 +1,8 @@
 .NavBar {
     width: 100%;
-    background-color: #252525 !important;
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
 }
 
 .NavBar__logo {
@@ -8,11 +10,30 @@
     width: auto;
 }
 
-.NavBar__text {
+.NavBar__menu {
     font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.NavBar__menu:hover {
+    color: white;
+}
+
+.NavBar__category {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.NavBar__category:hover {
+    color: white;
 }
 
 .NavBar__button__CartWidget {
+    height: 55px;
     border: none;
     border-radius: 15px;
     background-color: #252525;

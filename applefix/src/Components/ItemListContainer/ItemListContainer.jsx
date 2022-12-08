@@ -1,23 +1,34 @@
 // Imports
-import ItemCount from "../ItemCount"
-import ItemList from "../ItemList"
+import Item from "../Item/Item"
+import { productos, categorias } from "../../mock"
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 
 // Code
-const ItemListContainer = ({ greeting }) => {
-    const promise = new Promise((resolve, reject) => {
+const ItemListContainer = () => {
+    const [item, setItem] = useState(productos)
+    const { id } = useParams()
+
+    const filterCategory = new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(ItemList)
+            let newProductos = item.filter((p) => p.category == id)
+            resolve(newProductos)
         }, 2000);
     })
-    
-    promise.then(res => {
-        console.log(res);
-    })
+
+    useEffect(() => {
+        filterCategory.then((response) => {
+            setItem(response)
+        })
+    }, [id])
+
     return (
-        <div>
-            <h1>{greeting}</h1>
-            <ItemCount />
-            <ItemList />
+        <div className='ItemListContainer'>
+            {
+                item.map((producto) => {
+                    return <Item producto={producto} key={producto.id} />
+                })
+            }
         </div>
     )
 }

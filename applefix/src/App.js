@@ -3,20 +3,20 @@ import './App.css';
 
 import NavBar from './Components/NavBar'
 import ItemListContainer from './Components/ItemListContainer'
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
+import {menus, categorias} from './mock'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Code
 const App = () => {
-    const saludo = 'Bienvenido a AppleFix App'
-
     return (
         <BrowserRouter className="App">
-            <NavBar />
+            <NavBar menus={menus} categorias={categorias} />
             <Routes>
-                <Route exact path='/' element={<ItemListContainer greeting={saludo} />} />
-                {/* <Route exact path='/repuestos' element={<Repuestos />} />
-                <Route exact path='/equipos' element={<Equipos />} /> */}
+                <Route exact path='/' element={<ItemListContainer />} />
+                <Route exact path='/category/:id' element={<ItemListContainer />} />
+                <Route exact path='/item/:id' element={<ItemDetailContainer />} />
             </Routes>
         </BrowserRouter>
     );
