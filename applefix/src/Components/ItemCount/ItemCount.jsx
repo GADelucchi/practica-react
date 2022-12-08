@@ -12,7 +12,7 @@ const ItemCount = (onAdd) => {
                 <h2>{count}</h2>
                 <button className="ItemCount__button" onClick={() => setCount(count + 1)}>+</button>
             </div>
-            <button className="ItemCount__button" onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <button className="ItemCount__button">Agregar al carrito</button>
         </div>
     )
 }
