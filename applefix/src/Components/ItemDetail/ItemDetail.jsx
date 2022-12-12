@@ -1,10 +1,14 @@
 //Imports
-
+import ItemCount from "../ItemCount"
 
 //Code
-const ItemDetail = () => {
+const ItemDetail = ({item}) => {
     return(
-        <h1>Soy ItemDetail</h1>
+        <div >
+            <h2>Detalle de {item.name}</h2>
+            <img src={item.img} className='ItemListContainer_producto_img' alt={item.name}  />
+            <ItemCount />
+        </div>
     )
 }
 
